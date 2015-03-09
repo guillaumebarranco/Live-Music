@@ -1,0 +1,34 @@
+2015-03-09 22:17:37 Error: Fatal Error (1): Maximum execution time of 120 seconds exceeded in [C:\wamp\www\Live-Music\lib\Cake\Utility\Folder.php, line 193]
+2015-03-09 22:17:37 Error: [InternalErrorException] Internal Server Error
+Request URL: /Live-Music/import
+Stack Trace:
+#0 C:\wamp\www\Live-Music\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'C:\\wamp\\www\\Liv...', 193)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'C:\\wamp\\www\\Liv...', 193, Array)
+#2 C:\wamp\www\Live-Music\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'C:\\wamp\\www\\Liv...', 193, Array)
+#3 C:\wamp\www\Live-Music\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-03-09 22:17:37 Warning: Warning (2): session_regenerate_id(): Session object destruction failed in [C:\wamp\www\Live-Music\lib\Cake\Model\Datasource\CakeSession.php, line 730]
+Trace:
+session_regenerate_id - [internal], line ??
+CakeSession::renew() - CORE\Cake\Model\Datasource\CakeSession.php, line 730
+SessionComponent::renew() - CORE\Cake\Controller\Component\SessionComponent.php, line 137
+AuthComponent::login() - CORE\Cake\Controller\Component\AuthComponent.php, line 610
+UsersController::login() - APP\Controller\UsersController.php, line 122
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
+2015-03-09 22:19:09 Warning: Warning (2): exif_read_data(no-cover.png): File not supported in [C:\wamp\www\Live-Music\app\Controller\Component\ImageComponent.php, line 15]
+Trace:
+exif_read_data - [internal], line ??
+ImageComponent::resize() - APP\Controller\Component\ImageComponent.php, line 15
+ImgController::index() - APP\Controller\ImgController.php, line 38
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
