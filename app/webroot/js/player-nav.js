@@ -144,13 +144,13 @@ $(function(){
     });
 
 
-    //setInterval(function() {
+    setInterval(function() {
 
         $.ajax({
             type : "GET",
-            url : "/Live-Music/streams/getStreamMusic/",
+            url : "/music/streams/getStreamMusic/",
             success: function(response){
-                console.log(response);
+                console.log('reçoit chanson', response);
                 var getCurrentSong = response.getCurrentSong;
 
                 var song = player.getCurrentTrack();
@@ -170,28 +170,30 @@ $(function(){
             }
         });
 
-   // }, 500);
+    }, 500);
 
 
     //CONTENT
     $('#content').on('click', '.action-play', function(){
         var id = $(this).parents('tr').attr('data-id');
         var song = player.getCurrentTrack();
+        console.log('song', song);
         if(song != null && song.id == id){
             player.play();
         }else{
 
-            if(check_ajax == 0) {
+            if(check_ajax == 0 && song != null) {
                 check_ajax = 1;
 
                 $.ajax({
                     type : "POST",
-                    url : "/Live-Music/streams/streamMusic/",
+                    url : "/music/streams/streamMusic/",
                     data : {
                         song_id : song.id
                     },
                     success: function(response){
-                        console.log(response);
+                        alert('ok !');
+                        console.log('envoie chanson',response);
                         check_ajax = 0;
                     },
 
