@@ -138,5 +138,6 @@
     "jquery.scroll",
     "jquery.fs.selecter.min"));?>
 <?php echo $this->fetch('script'); ?>
+
 </body>
 </html>

@@ -5,6 +5,7 @@ function Player(ajax_url){
     var self = this;
     var loop = false;
     var random = false;
+    var check_ajax = 0;
 
     var repeatChange = new Event('repeatChange');
     var shuffleChange = new Event('shuffleChange');
@@ -128,6 +129,7 @@ function Player(ajax_url){
     this.remove = function(index) {
         playlist.remove(index);
     };
+    this
     this.play = function(id) {
         if(id !== undefined) {
             selected = playlist.get(id);
@@ -135,6 +137,7 @@ function Player(ajax_url){
         }
         audioElement.play();
     };
+
     this.playIndex = function(index) {
         selected = playlist.get(index, "index");
         if(selected != null) {
@@ -260,7 +263,6 @@ function Player(ajax_url){
     this.isShuffle = function(){
         return random;
     };
-
 
     this.konami = function(){
         audioElement.defaultPlaybackRate = 2;

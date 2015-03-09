@@ -1,0 +1,72 @@
+2015-03-09 22:32:55 Debug: Notice (8): Undefined variable: songs in [C:\wamp\www\Live-Music\app\Controller\UsersController.php, line 141]
+Trace:
+UsersController::streamMusic() - APP\Controller\UsersController.php, line 141
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
+2015-03-09 22:32:57 Debug: Notice (8): Undefined variable: songs in [C:\wamp\www\Live-Music\app\Controller\UsersController.php, line 141]
+Trace:
+UsersController::streamMusic() - APP\Controller\UsersController.php, line 141
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
+2015-03-09 22:33:11 Debug: Notice (8): Undefined variable: songs in [C:\wamp\www\Live-Music\app\Controller\UsersController.php, line 141]
+Trace:
+UsersController::streamMusic() - APP\Controller\UsersController.php, line 141
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
+2015-03-09 22:33:11 Debug: Notice (8): Undefined variable: songs in [C:\wamp\www\Live-Music\app\Controller\UsersController.php, line 141]
+Trace:
+UsersController::streamMusic() - APP\Controller\UsersController.php, line 141
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
+2015-03-09 22:57:17 Debug: Notice (8): Undefined variable: songs in [C:\wamp\www\Live-Music\app\Controller\UsersController.php, line 141]
+Trace:
+UsersController::streamMusic() - APP\Controller\UsersController.php, line 141
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
+2015-03-09 22:57:17 Debug: Notice (8): Undefined variable: songs in [C:\wamp\www\Live-Music\app\Controller\UsersController.php, line 141]
+Trace:
+UsersController::streamMusic() - APP\Controller\UsersController.php, line 141
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
+2015-03-09 22:57:39 Debug: Notice (8): Undefined variable: songs in [C:\wamp\www\Live-Music\app\Controller\UsersController.php, line 141]
+Trace:
+UsersController::streamMusic() - APP\Controller\UsersController.php, line 141
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+
+2015-03-09 22:57:39 Debug: Notice (8): Undefined variable: songs in [C:\wamp\www\Live-Music\app\Controller\UsersController.php, line 141]
+Trace:
+UsersController::streamMusic() - APP\Controller\UsersController.php, line 141
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE\Cake\Controller\Controller.php, line 490
+Dispatcher::_invoke() - CORE\Cake\Routing\Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE\Cake\Routing\Dispatcher.php, line 167
+[main] - APP\webroot\index.php, line 108
+

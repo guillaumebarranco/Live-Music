@@ -9,6 +9,7 @@ App::uses("AppController", "Controller");
  */
 class UsersController extends AppController{
 
+    public $components = array('Stream');
 
     public function isAuthorized($user){
         if($user['role'] == "admin"){

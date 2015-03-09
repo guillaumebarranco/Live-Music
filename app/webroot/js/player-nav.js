@@ -4,6 +4,7 @@ var shortcut = true;
 var volume = localStorage.getItem('volume');
 var repeat = localStorage.getItem('repeat');
 var shuffle = localStorage.getItem('shuffle');
+var check_ajax = 0;
 
 function updateSelectedSong(){
     var track = player.getCurrentTrack();
@@ -141,6 +142,37 @@ $(function(){
     $('#queue').on('click', '.action-remove-from-queue', function() {
         player.remove($(this).parents('tr').index());
     });
+
+
+    //setInterval(function() {
+
+        $.ajax({
+            type : "GET",
+            url : "/Live-Music/streams/getStreamMusic/",
+            success: function(response){
+                console.log(response);
+                var getCurrentSong = response.getCurrentSong;
+
+                var song = player.getCurrentTrack();
+                if(song != null && song.id == getCurrentSong){
+                    player.play();
+                }else{
+                    player.clearPlaylist();
+                    player.add(getCurrentSong, function(song) {
+                        player.play(song.getCurrentSong);
+                    });
+                }
+
+            },
+
+            error: function(){
+                console.log('error');
+            }
+        });
+
+   // }, 500);
+
+
     //CONTENT
     $('#content').on('click', '.action-play', function(){
         var id = $(this).parents('tr').attr('data-id');
@@ -148,6 +180,27 @@ $(function(){
         if(song != null && song.id == id){
             player.play();
         }else{
+
+            if(check_ajax == 0) {
+                check_ajax = 1;
+
+                $.ajax({
+                    type : "POST",
+                    url : "/Live-Music/streams/streamMusic/",
+                    data : {
+                        song_id : song.id
+                    },
+                    success: function(response){
+                        console.log(response);
+                        check_ajax = 0;
+                    },
+
+                    error: function(){
+                        console.log('error');
+                    }
+                }); 
+            }
+
             player.clearPlaylist();
             player.add(id, function(song) {
                 player.play(song.id);
