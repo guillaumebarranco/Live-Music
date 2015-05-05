@@ -9,6 +9,17 @@
     </div>
 </form>
 <ul class="nav navbar-nav navbar-right">
+
+    <li>
+        <div class="onoffswitch switch_socket">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </li>
+
     <li class="hidden-lg hidden-md"><?= $this->Html->link('<i class="glyphicon glyphicon-search"></i>', array('controller' => 'songs', 'action' => 'search'), array('data-toggle' => 'tooltip', 'data-placement' => 'bottom', 'title' => __('Search'), 'class' => 'nav-tooltips', 'escape' => false)); ?></li>
     <li><?= $this->Html->link('<i class="glyphicon glyphicon-refresh"></i>', array('controller' => 'songs', 'action' => 'import'), array('data-toggle' => 'tooltip', 'data-placement' => 'bottom', 'title' => __('Database update'), 'class' => 'nav-tooltips', 'escape' => false)); ?></li>
     <li><?= $this->Html->link('<i class="glyphicon glyphicon-cog"></i>', array('controller' => 'settings', 'action' => 'index'), array('data-toggle' => 'tooltip', 'data-placement' => 'bottom', 'title' => __('Settings'), 'class' => 'nav-tooltips', 'escape' => false)); ?></li>

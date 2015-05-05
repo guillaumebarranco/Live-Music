@@ -6,6 +6,16 @@ var repeat = localStorage.getItem('repeat');
 var shuffle = localStorage.getItem('shuffle');
 var check_ajax = 0;
 
+var socket = 1;
+
+$('.switch_socket input').on('change', function() {
+    if(socket === 0) {
+        socket = 1;
+    } else if(socket === 1) {
+        socket = 0;
+    }
+});
+
 function updateSelectedSong(){
     var track = player.getCurrentTrack();
     if(track){
@@ -56,6 +66,7 @@ function updateControls(){
         $("#queue-repeat").parent().removeClass('active single');
     }
 }
+
 function getFormatedTime(s){
     s = Math.round(s);
     var minutes = Math.floor(s/60);
@@ -150,19 +161,21 @@ $(function(){
             type : "GET",
             url : "/music/streams/getStreamMusic/",
             success: function(response){
-                console.log('reçoit chanson', response);
-                var getCurrentSong = response.getCurrentSong;
+                if(socket === 1) {
+                    console.log('reçoit chanson', response);
+                    var getCurrentSong = response.getCurrentSong;
 
-                var song = player.getCurrentTrack();
-                if(song != null && song.id == getCurrentSong){
-                    player.play();
-                }else{
-                    player.clearPlaylist();
-                    player.add(getCurrentSong, function(song) {
-                        player.play(song.getCurrentSong);
-                    });
+                    var song = player.getCurrentTrack();
+
+                    if(song != null && song.id == getCurrentSong){
+                        player.play();
+                    }else{
+                        player.clearPlaylist();
+                        player.add(getCurrentSong, function() {
+                            player.play(getCurrentSong);
+                        });
+                    }
                 }
-
             },
 
             error: function(){
@@ -170,7 +183,7 @@ $(function(){
             }
         });
 
-    }, 500);
+    }, 1000);
 
 
     //CONTENT
@@ -182,17 +195,17 @@ $(function(){
             player.play();
         }else{
 
-            if(check_ajax == 0 && song != null) {
+            if(check_ajax == 0 && song != null && socket === 1) {
                 check_ajax = 1;
 
                 $.ajax({
                     type : "POST",
                     url : "/music/streams/streamMusic/",
                     data : {
-                        song_id : song.id
+                        song_id : id
                     },
                     success: function(response){
-                        alert('ok !');
+                        //alert('ok !');
                         console.log('envoie chanson',response);
                         check_ajax = 0;
                     },
