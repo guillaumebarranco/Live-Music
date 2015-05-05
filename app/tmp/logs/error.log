@@ -1066,11 +1066,26 @@ Stack Trace:
 #3 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 C:\wamp\www\Live-Music\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+<<<<<<< HEAD
+2015-03-10 00:20:35 Error: [MissingComponentException] Component class StreamComponent could not be found.
+=======
 2015-03-09 23:20:31 Error: [MissingComponentException] Component class StreamComponent could not be found.
+>>>>>>> 663544c98222b380cf660555bfd1f680e820f4e2
 Exception Attributes: array (
   'class' => 'StreamComponent',
   'plugin' => false,
 )
+<<<<<<< HEAD
+Request URL: /Live-Music/login
+Stack Trace:
+#0 C:\wamp\www\Live-Music\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
+#1 C:\wamp\www\Live-Music\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\Live-Music\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-10 00:20:35 Error: [MissingComponentException] Component class StreamComponent could not be found.
+=======
 Request URL: /music/login
 Stack Trace:
 #0 /var/www/music/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
@@ -1080,10 +1095,22 @@ Stack Trace:
 #4 /var/www/music/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
 2015-03-09 23:20:32 Error: [MissingComponentException] Component class StreamComponent could not be found.
+>>>>>>> 663544c98222b380cf660555bfd1f680e820f4e2
 Exception Attributes: array (
   'class' => 'StreamComponent',
   'plugin' => false,
 )
+<<<<<<< HEAD
+Request URL: /Live-Music/login
+Stack Trace:
+#0 C:\wamp\www\Live-Music\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
+#1 C:\wamp\www\Live-Music\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\Live-Music\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-10 00:29:00 Error: [MissingComponentException] Component class StreamComponent could not be found.
+=======
 Request URL: /music/login
 Stack Trace:
 #0 /var/www/music/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
@@ -1093,10 +1120,22 @@ Stack Trace:
 #4 /var/www/music/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
 2015-03-09 23:20:32 Error: [MissingComponentException] Component class StreamComponent could not be found.
+>>>>>>> 663544c98222b380cf660555bfd1f680e820f4e2
 Exception Attributes: array (
   'class' => 'StreamComponent',
   'plugin' => false,
 )
+<<<<<<< HEAD
+Request URL: /Live-Music/login
+Stack Trace:
+#0 C:\wamp\www\Live-Music\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
+#1 C:\wamp\www\Live-Music\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\Live-Music\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-10 00:29:01 Error: [MissingComponentException] Component class StreamComponent could not be found.
+=======
 Request URL: /music/login
 Stack Trace:
 #0 /var/www/music/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
@@ -1106,10 +1145,22 @@ Stack Trace:
 #4 /var/www/music/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
 2015-03-09 23:20:33 Error: [MissingComponentException] Component class StreamComponent could not be found.
+>>>>>>> 663544c98222b380cf660555bfd1f680e820f4e2
 Exception Attributes: array (
   'class' => 'StreamComponent',
   'plugin' => false,
 )
+<<<<<<< HEAD
+Request URL: /Live-Music/login
+Stack Trace:
+#0 C:\wamp\www\Live-Music\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
+#1 C:\wamp\www\Live-Music\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\Live-Music\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-10 00:31:55 Error: [MissingComponentException] Component class StreamComponent could not be found.
+=======
 Request URL: /music/login
 Stack Trace:
 #0 /var/www/music/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
@@ -1119,10 +1170,22 @@ Stack Trace:
 #4 /var/www/music/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
 2015-03-09 23:20:33 Error: [MissingComponentException] Component class StreamComponent could not be found.
+>>>>>>> 663544c98222b380cf660555bfd1f680e820f4e2
 Exception Attributes: array (
   'class' => 'StreamComponent',
   'plugin' => false,
 )
+<<<<<<< HEAD
+Request URL: /Live-Music/login
+Stack Trace:
+#0 C:\wamp\www\Live-Music\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
+#1 C:\wamp\www\Live-Music\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\Live-Music\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-10 00:31:55 Error: [MissingComponentException] Component class StreamComponent could not be found.
+=======
 Request URL: /music/login
 Stack Trace:
 #0 /var/www/music/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
@@ -1132,10 +1195,20 @@ Stack Trace:
 #4 /var/www/music/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
 2015-03-09 23:22:07 Error: [MissingComponentException] Component class StreamComponent could not be found.
+>>>>>>> 663544c98222b380cf660555bfd1f680e820f4e2
 Exception Attributes: array (
   'class' => 'StreamComponent',
   'plugin' => false,
 )
+<<<<<<< HEAD
+Request URL: /Live-Music/login
+Stack Trace:
+#0 C:\wamp\www\Live-Music\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
+#1 C:\wamp\www\Live-Music\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#2 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(188): Controller->constructClasses()
+#3 C:\wamp\www\Live-Music\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 C:\wamp\www\Live-Music\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+=======
 Request URL: /music/login
 Stack Trace:
 #0 /var/www/music/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('Stream', Array)
@@ -2444,6 +2517,7 @@ Stack Trace:
 #2 /var/www/music/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
 #3 /var/www/music/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ImgController), Object(CakeRequest))
 #4 /var/www/music/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+>>>>>>> 663544c98222b380cf660555bfd1f680e820f4e2
 #5 {main}
 2015-03-10 09:04:32 Error: [NotFoundException] Not Found
 Request URL: /music/img/thumbnails/6af7987969b61855234f68a705e36c57_220x220.jpeg
