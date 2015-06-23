@@ -7,6 +7,7 @@ $(function(){
 
     function loadPage(url, pushState, method, data) {
         Pace.restart();
+        console.log('url', url);
         if(url.indexOf("?ajax=true") == -1)url = url + "?ajax=true";
         if(pushState === undefined)pushState = true;
         if(method === undefined)method = "GET";
@@ -29,6 +30,10 @@ $(function(){
                     $('title').text(response[1].title);
                 }
                 $('head').append(response[0].css);
+
+                console.log('response2', response[2]);
+                console.log('response2 flash', response[2].flash);
+
                 if(response[2].flash.length){
                     $('#flash').html(response[2].flash);
                     animateFlash();

@@ -45,14 +45,18 @@ class SettingsController extends AppController {
 
         if (is_dir(RESIZED_DIR)) {
             foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator(RESIZED_DIR)) as $file) {
-                $stats['thumbCache'] += $file->getSize();
+                // var_dump($file->getSize());
+                // die('ok');
+                if($file->getSize()) $stats['thumbCache'] += $file->getSize();
+                
             }
         }
 
         // MP3 cache size
         $stats['mp3Cache'] = 0;
         foreach (new RegexIterator(new RecursiveIteratorIterator(new RecursiveDirectoryIterator(TMP)), '/^.+\.(mp3|ogg)$/i') as $mp3) {
-            $stats['mp3Cache'] += $mp3->getSize();
+            if($mp3->getSize()) $stats['mp3Cache'] += $mp3->getSize();
+            
         }
 
         // Check if avconv shell command is available
