@@ -346,6 +346,12 @@ class SongsController extends AppController{
                 )
             );
 
+            $this->loadModel('Playlist');
+            $playlists = $this->Playlist->find('list', array(
+                'fields'        => array('Playlist.id', 'Playlist.title'),
+                'conditions'    => array('user_id' => AuthComponent::user('id'))
+            ));
+
             $parsed = array();
             foreach ($songs as $song) {
                 $setsQuantity = preg_split('/\//', $song['Song']['disc']);
@@ -382,7 +388,11 @@ class SongsController extends AppController{
             if (empty($parsed)) {
                 $this->Session->setFlash("<strong>".__('Oops!')."</strong> ".__('No results.'), 'flash_error');
             }
-            $this->set('songs', $parsed);
+            $this->set(array(
+                'songs' => $parsed, 
+                'playlists' => $playlists
+            ));
+            //$this->set(compact('songs', $parsed, 'playlists'));
         }
         $this->set('query', $query);
     }

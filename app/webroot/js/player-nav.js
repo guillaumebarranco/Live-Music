@@ -289,6 +289,7 @@ $(function(){
         player.addArtist(artist);
     });
     $('#content').on('click', '.action-add-playlist-to-up-next', function(){
+        alert('ok');
         var id = $(this).parents('[data-playlist]').attr('data-playlist');
         player.addPlaylist(id);
     });
