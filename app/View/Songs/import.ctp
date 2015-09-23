@@ -4,6 +4,10 @@
     var selectedSong = 0;
     function ajaxImport(){
         if(selectedSong<songs.length){
+
+            console.log(selectedSong);
+
+
             $.ajax({
                 url:"<?= $this->Html->url(array('controller' => 'songs', 'action' => 'ajax_import')); ?>",
                 data: "path="+encodeURIComponent(songs[selectedSong]),
@@ -14,6 +18,11 @@
                     $('#song-name').text(json.title);
                     selectedSong++;
                     ajaxImport();
+                }, error: function() {
+                    // var percentage = Math.round(selectedSong*100/songs.length);
+                    // $('#progress').css('width', percentage+"%");
+                    // selectedSong++;
+                    // ajaxImport();
                 }
             });
         }else{

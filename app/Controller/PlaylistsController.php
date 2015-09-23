@@ -17,6 +17,36 @@ class PlaylistsController extends AppController {
      */
     public function index($id = null) {
 
+        // $this->loadModel('Song');
+        // $this->loadModel('PlaylistMembership');
+
+
+        // $songs = $this->Song->find('all');
+
+        // $k = 0;
+
+        // foreach ($songs as $song) {
+
+        //     //if($k < 2) {
+
+        //         $data['playlist_id'] = 4;
+        //         $data['song_id'] = $song['Song']['id'];
+        //         $data['sort'] = $k+1;
+
+        //         $this->PlaylistMembership->create();
+        //         $this->PlaylistMembership->save($data);
+
+        //         echo $song['Song']['id'].'<br />';
+
+        //     // } else {
+        //     //     break;
+        //     // }
+        //     $k++;
+        // }
+
+        // //var_dump($songs);
+        // die;
+
         /**
          * @var array Array of playlist songs.
          */

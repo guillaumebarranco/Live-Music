@@ -26,6 +26,10 @@ class SongsController extends AppController{
 
         // Parse file metadata to $newSong array.
         if (isset($songInfo['comments'])) {
+
+
+            //var_dump($songInfo['comments']['artist']);
+
             if (isset($songInfo['comments']['title'])) {
                 $newSong['title'] = $songInfo['comments']['title'][0];
             }
@@ -46,7 +50,7 @@ class SongsController extends AppController{
                 $newSong['album'] = 'Unknown Album';
             }
 
-            if (isset($songInfo['comments']['track_number']) && intval($songInfo['comments']['track_number'][0])) {
+            if (isset($songInfo['comments']['track_number']) && intval($songInfo['comments']['track_number'][0]) && is_int($songInfo['comments']['track_number'][0])) {
                 $newSong['track_number'] = $songInfo['comments']['track_number'][0];
             }
 
@@ -54,11 +58,11 @@ class SongsController extends AppController{
                 $newSong['playtime'] = $songInfo['playtime_string'];
             }
 
-            if (isset($songInfo['comments']['year'])) {
+            if (isset($songInfo['comments']['year']) && is_int($songInfo['comments']['year'][0])) {
                 $newSong['year'] = $songInfo['comments']['year'][0];
             }
 
-            if (isset($songInfo['comments']['part_of_a_set'])) {
+            if (isset($songInfo['comments']['part_of_a_set']) && is_int($songInfo['comments']['part_of_a_set'][0])) {
                 $newSong['disc'] = $songInfo['comments']['part_of_a_set'][0];
             }
 
@@ -96,6 +100,7 @@ class SongsController extends AppController{
                 $newSong['title'] = $song;
             }
         }
+
 
         $newSong['source_path'] = $song;
         $this->Song->create();
