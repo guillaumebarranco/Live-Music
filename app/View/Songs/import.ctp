@@ -19,10 +19,10 @@
                     selectedSong++;
                     ajaxImport();
                 }, error: function() {
-                    // var percentage = Math.round(selectedSong*100/songs.length);
-                    // $('#progress').css('width', percentage+"%");
-                    // selectedSong++;
-                    // ajaxImport();
+                    var percentage = Math.round(selectedSong*100/songs.length);
+                    $('#progress').css('width', percentage+"%");
+                    selectedSong++;
+                    ajaxImport();
                 }
             });
         }else{

@@ -155,35 +155,35 @@ $(function(){
     });
 
 
-    // setInterval(function() {
+    setInterval(function() {
 
-    //     $.ajax({
-    //         type : "GET",
-    //         url : "/music/streams/getStreamMusic/",
-    //         success: function(response){
-    //             if(socket === 1) {
-    //                 console.log('reçoit chanson', response);
-    //                 var getCurrentSong = response.getCurrentSong;
+        $.ajax({
+            type : "GET",
+            url : "/music/streams/getStreamMusic/",
+            success: function(response){
+                if(socket === 1) {
+                    console.log('reçoit chanson', response);
+                    var getCurrentSong = response.getCurrentSong;
 
-    //                 var song = player.getCurrentTrack();
+                    var song = player.getCurrentTrack();
 
-    //                 if(song != null && song.id == getCurrentSong){
-    //                     player.play();
-    //                 }else{
-    //                     player.clearPlaylist();
-    //                     player.add(getCurrentSong, function() {
-    //                         player.play(getCurrentSong);
-    //                     });
-    //                 }
-    //             }
-    //         },
+                    if(song != null && song.id == getCurrentSong){
+                        player.play();
+                    }else{
+                        player.clearPlaylist();
+                        player.add(getCurrentSong, function() {
+                            player.play(getCurrentSong);
+                        });
+                    }
+                }
+            },
 
-    //         error: function(){
-    //             console.log('error');
-    //         }
-    //     });
+            error: function(){
+                console.log('error');
+            }
+        });
 
-    // }, 1000);
+    }, 1000);
 
 
     //CONTENT
